@@ -7,7 +7,7 @@ def ensure_output_dir():
 
 def save_comments(comment_list,song_id):
     """将评论保存到本地文本文件"""
-    filename = f"output/歌曲_{song_id}_评论.txt"
+    filename = f"output/歌曲_{song_id}.txt"
 
     with open(filename, 'w', encoding='utf-8') as f:
         for index, comment in enumerate(comment_list, start=1):
